@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- يدعم اللغة العربية والانجليزيه بشكل سليم -->
+    <meta charset="UTF-8" />
+    <!-- الكلمات الاساسية -->
+    <meta name="keywords" content="sell products" />
+    <!-- وصف الصفحة -->
+    <meta name="description" content="this mall sells products" />
+    <!-- مؤلف الصفحة -->
+    <meta name="author" content=" Ashour " />
+    <!-- العرض علي جميع الاجهزه -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icon -->
+    <link rel="icon" href="imges/logo.png" type="image/x-icon" />
+    <!-- العنوان -->
+    <title>Digital</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- start navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="imges/logo.png" alt="logo" />
+          <h3>Digital</h3>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mian"
+          aria-controls="mian"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="mian">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services"> Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#teamwork">Team Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+          </ul>
+          <div class="login">
+            <a href="html/sighn/sign.html">login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar  -->
+
+    <!-- start sec1 Home -->
+    <section class="sec1" id="Home">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <h2>Welcome To Company <br /><span>Digital </span></h2>
+            <p>
+              where technological innovation meets <br />
+              artistic creativity
+            </p>
+            <div>
+              <a class="btn" href="#Contact">Contact us</a>
+              <a class="btn" href="html/sighn/sign.html">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end sec1 Home -->
+
+    <!-- start About -->
+    <section id="about" class="sec-about">
+      <div class="container">
+        <div class="row">
+          <h2>About Us</h2>
+          <div class="about">
+            <div class="col-12 col-md-5 img">
+              <img src="imges/snapedit_1715464835205.jpeg" alt="" />
+            </div>
+            <div class="col-12 col-md-7 content">
+              <p>
+                At Digital we provide a wide range of ready-made templates that
+                help you launch your projects quickly and efficiently. Our
+                templates are designed to be flexible and easy to customize,
+                allowing you to innovate and stand out <br />
+                <br />
+                The companies we deal with or cooperate with are Vodafone DCS
+                Nile Creations Edisla Enjaz Media Interact
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about -->
+
+    <!-- start section services -->
+    <section class="services" id="services">
+      <h3>Services</h3>
+      <div class="container">
+        <div class="row">
+          <div class="services-itme col-12 col-md-6 col-lg-4">
+            <i class="fa-solid fa-code svg"></i>
+            <h6>softwore solution</h6>
+            <p>
+              We provide innovative software solutions that meet<br />
+              business needs, from developing web and mobile<br />
+              applications to creating integrated management systems.
+            </p>
+          </div>
+          <div class="services-itme col-12 col-md-6 col-lg-4">
+            <i class="fa-solid fa-palette svg"></i>
+            <h6>Design</h6>
+            <p>
+              Our designs combine aesthetics and functionality. <br />
+              We create a visual identity that reflects your brand<br />
+              values ​​and attracts your target audience.
+            </p>
+          </div>
+          <div class="services-itme col-12 col-md-6 col-lg-4">
+            <i class="fa-solid fa-chart-simple svg"></i>
+            <h6>Marketing</h6>
+            <p>
+              We elevate your brand in the digital world through <br />
+              thoughtful marketing strategies that increase your <br />
+              reach and customer interaction.
+            </p>
+          </div>
+          <div class="btn" id="srev">
+            <button class="lorem">Service Request</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section content-servided -->
+
+    <!-- start contract -->
+    <section class="contract" id="contract">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <form action="" method="post">
+              <div class="cont">
+                <h3>Contract</h3>
+                <p id="hd"><i class="fa-solid fa-x"></i></p>
+              </div>
+              <div class="div1">
+                <input
+                  type="text"
+                  name="Name"
+                  id="Name"
+                  placeholder="Company Name"
+                  required
+                />
+                <input
+                  type="text"
+                  name="Address"
+                  id="Address"
+                  placeholder="Company Address"
+                />
+              </div>
+              <div class="div2">
+                <input
+                  type="text"
+                  name="record"
+                  id="record"
+                  placeholder="Batting record"
+                />
+                <input
+                  type="email"
+                  name=" Email"
+                  id=" Email"
+                  placeholder=" Email"
+                  required
+                />
+              </div>
+              <div class="div3">
+                <label for="#type">Service Type</label> <br />
+                <input
+                  type="checkbox"
+                  name="service type"
+                  id="type1"
+                  value="softwore solution"
+                  checked
+                />
+                <label for="type1">softwore solution</label>
+                <br />
+                <input
+                  type="checkbox"
+                  name="service type"
+                  id="type2"
+                  value="Design"
+                />
+                <label for="type2">Design</label>
+                <br />
+                <input
+                  type="checkbox"
+                  name="service type"
+                  id="type3"
+                  value="Marketing"
+                />
+                <label for="type3">Marketing</label> <br />
+              </div>
+              <div class="div4">
+                <textarea
+                  name="description"
+                  id="description"
+                  placeholder="Service description"
+                  required
+                ></textarea>
+              </div>
+              <div class="div5">
+                <label for="delivery">Final delivery</label>
+                <input
+                  class="da"
+                  type="date"
+                  name="delivery"
+                  id="delivery"
+                  required
+                />
+                <input
+                  class="in"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="available"
+                  required
+                />
+              </div>
+              <div class="div6">
+                <label for="rights">Determine legal rights</label> <br />
+                <input
+                  type="radio"
+                  name="rights"
+                  id="rights1"
+                  value="Complete"
+                  checked
+                />
+                <label for="rights1"
+                  >You will move be fully transported after completion
+                  (Complete)</label
+                ><br />
+                <input type="radio" name="rights" id="rights2" value="Commo" />
+                <label for="rights2">Common property rights (Commo)</label>
+              </div>
+              <div class="div7">
+                <label for="policy">Determine the cancellation policy</label
+                ><br />
+                <input
+                  type="checkbox"
+                  name="policy"
+                  id="policy1"
+                  value="(there is a 15% fee)"
+                  checked
+                />
+                <label for="policy1"
+                  >Cancellation fees (there is a 15% fee)</label
+                ><br />
+                <input
+                  type="checkbox"
+                  name="policy2"
+                  id="policy2"
+                  value="(full refund of amounts paid)"
+                />
+                <label for="policy2">
+                  Cancellation by the service provider (full refund of amounts
+                  paid)</label
+                >
+              </div>
+              <div class="sum"><button type="submit">submit</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end contract -->
+
+    <!-- start products -->
+    <section id="products" class="sec-Products">
+      <div class="container">
+        <div class="row">
+          <h3>Products</h3>
+          <div class="Products">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 Products-itme">
+              <div class="box">
+                <div class="img">
+                  <img src="imges/screencapture1.png" />
+                </div>
+                <div class="cont">
+                  <div class="price">
+                    <h4>Template</h4>
+                    <p>$200</p>
+                  </div>
+                  <div class="rate">
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="btn">
+                    <a href="html/buy.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>Add to cart</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 Products-itme">
+              <div class="box">
+                <div class="img">
+                  <img src="imges/screencapture2.png" />
+                </div>
+                <div class="cont">
+                  <div class="price">
+                    <h4>Template</h4>
+                    <p>$220</p>
+                  </div>
+                  <div class="rate">
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="btn">
+                    <a href="html/buy.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>Add to cart</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 Products-itme">
+              <div class="box">
+                <div class="img">
+                  <img src="imges/screencapture3.png" />
+                </div>
+                <div class="cont">
+                  <div class="price">
+                    <h4>Template</h4>
+                    <p>$180</p>
+                  </div>
+                  <div class="rate">
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="btn">
+                    <a href="html/buy.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>Add to cart</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 Products-itme">
+              <div class="box">
+                <div class="img">
+                  <img src="imges/screencapture4.png" />
+                </div>
+                <div class="cont">
+                  <div class="price">
+                    <h4>Template</h4>
+                    <p>$250</p>
+                  </div>
+                  <div class="rate">
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="btn">
+                    <a href="html/buy.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>Add to cart</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 Products-itme">
+              <div class="box">
+                <div class="img">
+                  <img src="imges/screencapture5.png" />
+                </div>
+                <div class="cont">
+                  <div class="price">
+                    <h4>Template</h4>
+                    <p>$210</p>
+                  </div>
+                  <div class="rate">
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="btn">
+                    <a href="html/buy.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>Add to cart</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 Products-itme">
+              <div class="box">
+                <div class="img">
+                  <img src="imges/screencapture6.png" />
+                </div>
+                <div class="cont">
+                  <div class="price">
+                    <h4>Template</h4>
+                    <p>$280</p>
+                  </div>
+                  <div class="rate">
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="btn">
+                    <a href="html/buy.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>Add to cart</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 Products-itme">
+              <div class="box">
+                <div class="img">
+                  <img src="imges/screencapture7.png" />
+                </div>
+                <div class="cont">
+                  <div class="price">
+                    <h4>Template</h4>
+                    <p>$225</p>
+                  </div>
+                  <div class="rate">
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="btn">
+                    <a href="html/buy.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>Add to cart</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 Products-itme">
+              <div class="box">
+                <div class="img">
+                  <img src="imges/screencapture8.png" />
+                </div>
+                <div class="cont">
+                  <div class="price">
+                    <h4>Template</h4>
+                    <p>$200</p>
+                  </div>
+                  <div class="rate">
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="btn">
+                    <a href="html/buy.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>Add to cart</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Products -->
+
+    <!-- start teamwork -->
+    <div class="sec-team" id="teamwork">
+      <h2>Team Work</h2>
+      <section class="swiper mySwiper container">
+        <div class="swiper-wrapper card">
+          <div class="swiper-slide">
+            <div class="card-itme col-12 col-sm-6 col-md-4 col-lg-3">
+              <img src="imges/team1.jpeg" alt="" />
+              <div class="cont">
+                <h5>Jullia Siger</h5>
+                <p>softwore solution</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-itme col-12 col-sm-6 col-md-4 col-lg-3">
+              <img src="imges/team2.jpeg" alt="" />
+              <div class="cont">
+                <h5>Claire Divas</h5>
+                <p>Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-itme col-12 col-sm-6 col-md-4 col-lg-3">
+              <img src="imges/team3.jpeg" alt="" />
+              <div class="cont">
+                <h5>Makhaia Antitni</h5>
+                <p>Marketing</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-itme col-12 col-sm-6 col-md-4 col-lg-3">
+              <img src="imges/team4.jpeg" alt="" />
+              <div class="cont">
+                <h5>Harry Steve</h5>
+                <p>softwore solution</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-itme col-12 col-sm-6 col-md-4 col-lg-3">
+              <img src="imges/team5.jpeg" alt="" />
+              <div class="cont">
+                <h5>Ahmed Mohamed</h5>
+                <p>Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-itme col-12 col-sm-6 col-md-4 col-lg-3">
+              <img src="imges/team6.jpeg" alt="" />
+              <div class="cont">
+                <h5>Jullia Siger</h5>
+                <p>Marketing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- end teamwork -->
+
+    <!-- start sec5 Contact -->
+    <section class="sec-Contact" id="Contact">
+      <div class="container">
+        <div class="row">
+          <div class="map col-12 col-md-6 col-lg-7">
+            <img src="imges/Working.gif" alt="" />
+          </div>
+          <div class="form col-12 col-md-6 col-lg-5">
+            <form action="">
+              <h2>Contact Us</h2>
+              <input
+                type="text"
+                name="user name"
+                placeholder="User name"
+                class="user"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="email"
+                class="email"
+              />
+              <textarea placeholder="message"></textarea>
+              <input type="submit" value="Send" class="sub" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end sec5 Contact -->
+
+    <!-- start Reviews -->
+    <section id="reviews" class="sec-Reviews">
+      <div class="container">
+        <h3>Ratings And Reviews</h3>
+        <div class="row">
+          <div class="Reviews">
+            <div class="col-12 col-md-6 col-lg-4 Reviews-item">
+              <div class="revi">
+                <div class="card">
+                  <div class="logo">
+                    <img src="imges/r1.png" alt="" />
+                    <h5>Makhaia Antitni</h5>
+                  </div>
+                  <div class="incos">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+                <p>
+                  Great company. The programming team provided us with
+                  innovative solutions that were completely customized to our
+                  business needs
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 Reviews-item">
+              <div class="revi">
+                <div class="card">
+                  <div class="logo">
+                    <img src="imges/r2.png" alt="" />
+                    <h5>Mohamed Ahmed</h5>
+                  </div>
+                  <div class="incos">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <p>
+                  E-marketing services from this company helped us significantly
+                  increase our brand awareness, and we are happy with the
+                  results
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 Reviews-item">
+              <div class="revi">
+                <div class="card">
+                  <div class="logo">
+                    <img src="imges/team4.jpeg" alt="" />
+                    <h5>Jullia Siger</h5>
+                  </div>
+                  <div class="incos">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+                <p>
+                  The creative design of the website provided by the company
+                  made us stand out among competitors, and the quality of work
+                  was very high
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Reviews -->
+
+    <!-- start section footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="content">
+            <div
+              class="Company col-12 col-md-6 col-lg-3 wow slideInLeft"
+              data-wow-delay="1s"
+            >
+              <h4>Company Digital</h4>
+              <p>
+                At Digital, we are passionate about technology and committed to
+                providing IT solutions to businesses of all services
+              </p>
+              <div class="inco">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Higher Technological <br />Institute in Beni Suef</p>
+              </div>
+            </div>
+            <div
+              class="Page col-12 col-md-6 col-lg-3 wow slideInLeft"
+              data-wow-delay="750ms"
+            >
+              <h4>Page Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#teamwork">Team Work</a></li>
+                <li><a href="#Contact">Contact us</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+              </ul>
+            </div>
+            <div
+              class="Contacts col-12 col-md-6 col-lg-3 wow slideInLeft"
+              data-wow-delay="500ms"
+            >
+              <h4>Contacts</h4>
+              <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Higher Technological <br />Institute in Beni Suef</p>
+              </div>
+              <div>
+                <i class="fas fa-clock"></i>
+                <p>Mon-Sat 9:00 - 7:00</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-phone"></i>
+                <p>+20101-234-5678</p>
+              </div>
+              <div>
+                <i aria-hidden="true" class="fas fa-envelope"></i>
+                <p>Digital12@gmail.com</p>
+              </div>
+            </div>
+            <div
+              class="Subscribe col-12 col-md-6 col-lg-3 wow slideInLeft"
+              data-wow-delay="100ms"
+            >
+              <div class="inco">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-tiktok"></i>
+              </div>
+            </div>
+          </div>
+          <div class="co row">
+            <div class="copy">
+              <div class="p">
+                <p>Copyright 2024 &copy; All Right Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end section footer -->
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js\all.min.js"></script>
+    <script src="js\bootstrap.min.js"></script>
+    <script src="js\main.js"></script>
+  </body>
+</html>

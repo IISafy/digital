@@ -1,0 +1,728 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+body {
+  overflow-x: hidden;
+}
+/* start sidebar*/
+.row > * {
+  padding: 0;
+}
+.nav {
+  width: 250px;
+  min-height: 100vh;
+  background-color: #00002f;
+  padding-top: 20px;
+  overflow: hidden;
+  margin-left: -20px;
+}
+.nav ul {
+  position: fixed;
+  height: 100%;
+  top: 25px;
+}
+.nav ul li a {
+  display: flex;
+  text-align: center;
+  gap: 30px;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  width: 180px;
+  transition: 0.3s;
+  border-radius: 5px;
+  color: white;
+}
+.nav ul li a:hover,
+a.active {
+  background-color: #1d1b59;
+}
+.nav ul li a {
+  font-size: 22px;
+  margin-top: 4px;
+}
+.nav ul li a p {
+  margin: 0;
+  margin-top: 2px;
+  font-size: 17px;
+}
+.nav ul li a.login {
+  position: absolute;
+  bottom: 25px;
+  color: white;
+  background-color: red;
+  transition: 0.3s;
+  border: 2px solid red;
+}
+.nav ul li a.login:hover {
+  background-color: transparent;
+  color: red;
+}
+/* @media (max-width: 767px) { */
+@media (max-width: 830px) {
+  .nav {
+    width: 92px;
+  }
+  .nav ul li a p {
+    display: none;
+  }
+  .nav ul li a {
+    width: 50px;
+    text-align: center;
+  }
+  .nav ul li a svg {
+    margin-left: 4px;
+  }
+  .sidebar ul li a svg {
+    display: none;
+  }
+}
+/* end sidebar*/
+
+/* start dashboard */
+.dashboard {
+  background-color: #1d1b59;
+  flex: 1;
+  color: white;
+}
+.dashboard h3 {
+  margin: 25px 0 0 30px;
+}
+.dashboard .car {
+  margin: auto;
+  max-width: 810px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.dashboard .ca {
+  margin: 35px auto;
+}
+.dashboard .car .car_aitem {
+  min-width: 230px;
+  max-width: 300px;
+  background-color: #00002f;
+  margin: 20px 5px;
+  height: 100px;
+  padding: 15px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 20px 10pxpx;
+}
+.dashboard .car .car_aitem .icon svg {
+  margin: 0 0 20px 20px;
+  font-size: 20px;
+}
+.dashboard .car .car_aitem .cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard .car .car_aitem:hover {
+  transform: scale(1.1);
+  background-color: #000074;
+}
+.dashboard .car .car_aitem h5 {
+  margin: 0;
+}
+.dashboard .car .car_aitem p {
+  margin: 0;
+}
+.dashboard img {
+  margin: 50px;
+  width: 70%;
+}
+/* end dashboard */
+/* start chart  */
+#chart {
+  padding: 20px;
+  margin: 50px auto;
+  width: 90%;
+  color: black;
+  background-color: white;
+}
+/* end chart  */
+
+/* start Requests */
+.requests {
+  flex: 1;
+  background-color: #1d1b59;
+  color: white;
+}
+.requests h3,
+.req {
+  margin: 20px;
+}
+.req table {
+  width: 100%;
+  margin: auto;
+}
+.req table thead th {
+  text-align: center;
+  border: 1px solid;
+  padding: 2px;
+}
+@media (max-width: 830px) {
+  .req table thead th {
+    font-size: 10px;
+  }
+}
+@media (max-width: 430px) {
+  .requests {
+    margin: 0px;
+  }
+  .req table thead th {
+    font-size: 8px;
+  }
+}
+.req table tbody td {
+  text-align: center;
+  border: 1px solid;
+  padding: 4px;
+}
+@media (max-width: 930px) {
+  .req table tbody td {
+    font-size: 10px;
+  }
+  .req {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 520px) {
+  .req table tbody td {
+    font-size: 6px;
+  }
+}
+@media (max-width: 430px) {
+  .req table tbody td {
+    font-size: 4px;
+    padding: 0;
+  }
+  .req {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 350px) {
+  .req table tbody td {
+    font-size: 2px;
+    padding: 0;
+  }
+  .req {
+    margin: 20px 0;
+  }
+}
+/* end Requests */
+
+/* start teamwork */
+.teamwork {
+  flex: 1;
+  background-color: #1d1b59;
+  color: white;
+}
+.teamwork h3,
+.team {
+  margin: 20px;
+}
+.team table {
+  width: 70%;
+  margin: 20px;
+}
+@media (max-width: 1050px) {
+  .team table {
+    width: 80%;
+    margin: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .team table {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .team {
+    margin: 20px 0;
+  }
+}
+.team table thead th {
+  text-align: center;
+  border: 1px solid;
+  padding: 2px;
+}
+@media (max-width: 430px) {
+  .team table thead th {
+    font-size: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .req table thead th {
+    font-size: 8px;
+  }
+}
+.team table tbody td {
+  text-align: center;
+  border: 1px solid;
+  padding: 4px;
+}
+.team table tbody td img {
+  width: 45px;
+  border-radius: 50%;
+  margin: 5px;
+}
+.team table tbody td div {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 360px) {
+  .team table tbody td {
+    font-size: 10px;
+  }
+}
+.formadd {
+  margin: 50px 0px 50px 20px;
+  max-width: 285px;
+  border: 1px solid;
+  padding: 5px;
+}
+@media (max-width: 400px) {
+  .formadd {
+    margin: 50px auto;
+    max-width: 210px;
+  }
+}
+.formadd form h5 {
+  font-size: 25px;
+  margin: 20px 0;
+}
+.formadd form input::placeholder {
+  color: aliceblue;
+}
+.formadd form input[name="Name"],
+.formadd form input[name="services"] {
+  margin: 10px 0;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 5px;
+  color: white;
+}
+.formadd form input[name="img"] {
+  margin: 15px 0;
+}
+.formadd form input[value="Create"] {
+  margin: 20px 0px 2px;
+  padding: 5px 30px;
+  border-radius: 11px;
+  outline: none;
+  border: 2px solid white;
+  color: #000074;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.formadd form input[value="Create"]:hover {
+  color: white;
+  background-color: transparent;
+}
+/* end teamwork */
+
+/* start Services */
+.services {
+  flex: 1;
+  background-color: #1d1b59;
+  color: white;
+}
+.services h3,
+.ser {
+  margin: 20px;
+}
+.ser table {
+  width: 70%;
+  margin: 20px;
+}
+@media (max-width: 1050px) {
+  .ser table {
+    width: 80%;
+    margin: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .ser table {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .ser {
+    margin: 20px 0;
+  }
+}
+.ser table thead th {
+  text-align: center;
+  border: 1px solid;
+  padding: 2px;
+}
+@media (max-width: 500px) {
+  .ser table thead th {
+    font-size: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .req table thead th {
+    font-size: 8px;
+  }
+}
+.ser table tbody td {
+  text-align: center;
+  border: 1px solid;
+  padding: 4px;
+  max-width: 200px;
+}
+.ser table tbody td div {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .ser table tbody td {
+    font-size: 10px;
+  }
+}
+.formadd {
+  margin: 50px 0px 50px 20px;
+  max-width: 285px;
+  border: 1px solid;
+  padding: 5px;
+}
+@media (max-width: 400px) {
+  .formadd {
+    margin: 50px auto;
+    max-width: 210px;
+  }
+}
+.formadd form h5 {
+  font-size: 25px;
+  margin: 20px 0;
+}
+.formadd form input::placeholder {
+  color: aliceblue;
+}
+.formadd form input[name="Name"],
+.formadd form input[name="services"] {
+  margin: 10px 0;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 5px;
+  color: white;
+}
+.formadd form input[name="img"] {
+  margin: 15px 0;
+}
+textarea {
+  background-color: transparent;
+  border: 2px solid white;
+  outline: none;
+  height: 100px;
+  width: 100%;
+  margin: 10px 0;
+  color: white;
+  padding: 5px;
+}
+textarea::placeholder {
+  color: white;
+}
+.formadd form input[value="Create"] {
+  margin: 20px 0px 2px;
+  padding: 5px 30px;
+  border-radius: 11px;
+  outline: none;
+  border: 2px solid white;
+  color: #000074;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.formadd form input[value="Create"]:hover {
+  color: white;
+  background-color: transparent;
+}
+/* end Services */
+
+/* start projact */
+.projact {
+  flex: 1;
+  background-color: #1d1b59;
+  color: white;
+}
+.projact h3,
+.pro {
+  margin: 20px;
+}
+.pro table {
+  width: 70%;
+  margin: 20px;
+}
+@media (max-width: 1050px) {
+  .pro table {
+    width: 80%;
+    margin: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .pro table {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .pro {
+    margin: 20px 0;
+  }
+}
+.pro table thead th {
+  text-align: center;
+  border: 1px solid;
+  padding: 2px;
+}
+@media (max-width: 500px) {
+  .pro table thead th {
+    font-size: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .pro table thead th {
+    font-size: 8px;
+  }
+}
+.pro table tbody td {
+  text-align: center;
+  border: 1px solid;
+  padding: 4px;
+  max-width: 200px;
+}
+.pro table tbody td img {
+  width: 50px;
+  margin: 5px;
+  border-radius: 50%;
+}
+.pro table tbody td div {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .pro table tbody td {
+    font-size: 10px;
+  }
+}
+.formadd {
+  margin: 50px 0px 50px 20px;
+  max-width: 285px;
+  border: 1px solid;
+  padding: 5px;
+}
+@media (max-width: 400px) {
+  .formadd {
+    margin: 50px auto;
+    max-width: 230px;
+  }
+}
+.formadd form h5 {
+  font-size: 25px;
+  margin: 20px 0;
+}
+.formadd form input::placeholder {
+  color: aliceblue;
+}
+.formadd form input[name="Name"],
+.formadd form input[name="price"] {
+  margin: 10px 0;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 5px;
+  color: white;
+}
+.formadd form input[name="img"] {
+  margin: 15px 0;
+}
+.formadd form input[value="Create"] {
+  margin: 20px 0px 2px;
+  padding: 5px 30px;
+  border-radius: 11px;
+  outline: none;
+  border: 2px solid white;
+  color: #000074;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.formadd form input[value="Create"]:hover {
+  color: white;
+  background-color: transparent;
+}
+
+/* end projact */
+/* start profile */
+.profile {
+  flex: 1;
+  background-color: #1d1b59;
+  color: white;
+}
+.profile .prof h5 {
+  margin: 20px;
+  font-size: 26px;
+}
+.profile .prof .baek {
+  margin: auto;
+  width: 90%;
+  height: 130px;
+  background-color: #0000004f; 
+  border: 2px solid white;
+}
+.profile .prof .img {
+  display: flex;
+  gap: 20px;
+}
+.profile .prof .img img {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: -65px;
+  margin-left: 75px;
+  margin-bottom: 36px;
+  border: 2px solid white;
+}
+@media (max-width: 800px) {
+  .profile .prof .img img {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 450px) {
+  .profile .prof .img img {
+    width: 120px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 360px) {
+  .profile .prof .img img {
+    width: 100px;
+  }
+}
+.profile .prof .img p {
+  font-size: 25px;
+  margin: 10px 0;
+}
+.profile .prof .Information {
+  margin-bottom: 50px;
+}
+.profile .prof .Information h5 {
+  margin: 0 0 15px 15px;
+}
+.profile .prof .Information p {
+  margin: 0 0 10px 30px;
+}
+.profile .prof .Skills {
+  margin-bottom: 50px;
+}
+.profile .prof .Skills h5 {
+  margin: 0 0 15px 15px;
+}
+.profile .prof .Skills p {
+  margin: 0 0 10px 30px;
+}
+.copy {
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+}
+.copy  p{
+  margin: 0;
+}
+@media (max-width: 360px) {
+  .copy p{
+    font-size: 14px;
+  }
+}
+/* end profile */
+/* start contact */
+.contact {
+  flex: 1;
+  background-color: #1d1b59;
+  color: white;
+}
+.contact h3,
+.con {
+  margin: 20px;
+}
+.con table {
+  width: 80%;
+  /* margin: auto; */
+}
+.con table thead th {
+  text-align: center;
+  border: 1px solid;
+  padding: 2px;
+}
+@media (max-width: 830px) {
+  .con table thead th {
+    font-size: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .contact {
+    margin: 0px;
+  }
+  .con table{
+    width: 100%;
+
+  }
+  .con table thead th {
+    font-size: 12px;
+  }
+}
+.con table tbody td {
+  text-align: center;
+  border: 1px solid;
+  padding: 4px;
+}
+@media (max-width: 930px) {
+  .con table tbody td {
+    font-size: 15px;
+  }
+  .con {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 520px) {
+  .con table tbody td {
+    font-size: 12px;
+  }
+}
+@media (max-width: 430px) {
+  .con table tbody td {
+    font-size: 12px;
+    padding: 3px;
+  }
+  .con {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 350px) {
+  .con table tbody td {
+    font-size: 10px;
+    padding: 0;
+  }
+  .con{
+    margin: 20px 0;
+  }
+}
+
+/* end contact */
